@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.ComposeTV" parent="@style/Theme.Leanback" />
+</resources>
