@@ -2,6 +2,8 @@
 
 A composable to show live video previews in Android TV content feeds.
 
+![](art/preview_card.gif)
+
 ```
 @Composable
 fun PreviewCard(
