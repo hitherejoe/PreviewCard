@@ -81,5 +81,5 @@ fun ImmersiveListScope.RowItem(
             indication = rememberRipple(),
             onClick = { onSelected(index) }
         ), cardWidth = 240.dp, cardHeight = height, videoUrl = item.url,
-        hasFocus = focused, thumbnail = item.image)
+        hasFocus = focused, thumbnailUrl = item.image)
 }

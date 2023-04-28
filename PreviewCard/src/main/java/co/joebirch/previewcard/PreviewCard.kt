@@ -162,7 +162,6 @@ fun PreviewCard(
                         }
                     }
                 }
-                exoPlayer.play()
             } else {
                 PreviewThumbnail(thumbnailUrl, thumbnailBitmap, thumbnailFrame, videoUrl, false) {
                     thumbnailBitmap = it
