@@ -80,14 +80,7 @@ fun PreviewCard(
                 videoScalingMode = VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING
             }
         }
-
-        exoPlayer.addListener(object : Listener {
-            override fun onPlaybackStateChanged(playbackState: Int) {
-                super.onPlaybackStateChanged(playbackState)
-                currentlyPlaying = playbackState == Player.STATE_READY
-            }
-        })
-
+        
         LaunchedEffect(key1 = videoUrl) {
             val dataSourceFactory: DataSource.Factory = DefaultHttpDataSource.Factory()
             val mediaSource: MediaSource = ProgressiveMediaSource.Factory(dataSourceFactory)
